@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.iiiotwms.user_service.dto.JwtResponse;
 import com.iiiotwms.user_service.service.AuthService;
 @RestController
 @RequestMapping("/api/v1/auth")
@@ -15,9 +16,9 @@ public class AuthController {
     @Autowired private AuthService authService;
 
     @PostMapping("/login")
-    public ResponseEntity<String> login(@RequestBody LoginRequest request) {
+    public ResponseEntity<JwtResponse> login(@RequestBody LoginRequest request) {
         String token = authService.login(request.email(), request.password());
-        return ResponseEntity.ok(token);
+        return ResponseEntity.ok(new JwtResponse(token));
     }
 
     public record LoginRequest(String email, String password) {}
