@@ -1,0 +1,160 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.iiiotwms:inbound-service >--------------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.1.1:run (default-cli) > test-compile @ inbound-service >>>
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ inbound-service ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ inbound-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ inbound-service ---
+[INFO] skip non existing resourceDirectory c:\Users\psd_d\Workspace\iiiotwms\backend\inbound-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ inbound-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:4.1.1:run (default-cli) < test-compile @ inbound-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.1.1:run (default-cli) @ inbound-service ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.1)
+
+2026-09-12T13:04:43.877+05:30  INFO 34584 --- [inbound-service] [           main] c.i.inbound.InboundServiceApplication    : Starting InboundServiceApplication using Java 26.0.2.1 with PID 34584 (C:\Users\psd_d\Workspace\iiiotwms\backend\inbound-service\target\classes started by psd_d in c:\Users\psd_d\Workspace\iiiotwms\backend\inbound-service)
+2026-09-12T13:04:43.882+05:30  INFO 34584 --- [inbound-service] [           main] c.i.inbound.InboundServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-09-12T13:04:45.836+05:30  INFO 34584 --- [inbound-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-12T13:04:46.028+05:30  INFO 34584 --- [inbound-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 166 ms. Found 3 JPA repository interfaces.
+2026-09-12T13:04:48.222+05:30  INFO 34584 --- [inbound-service] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8083 (http)
+2026-09-12T13:04:48.270+05:30  INFO 34584 --- [inbound-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-12T13:04:48.271+05:30  INFO 34584 --- [inbound-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-12T13:04:48.516+05:30  INFO 34584 --- [inbound-service] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4539 ms
+2026-09-12T13:04:49.114+05:30  INFO 34584 --- [inbound-service] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-12T13:04:49.320+05:30  INFO 34584 --- [inbound-service] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-12T13:04:51.258+05:30  INFO 34584 --- [inbound-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-12T13:04:51.385+05:30  INFO 34584 --- [inbound-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-12T13:04:52.386+05:30  INFO 34584 --- [inbound-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6231f77a
+2026-09-12T13:04:52.399+05:30  INFO 34584 --- [inbound-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-12T13:04:52.734+05:30  INFO 34584 --- [inbound-service] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/iiiotwms]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.6
+	Default catalog/schema: iiiotwms/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-12T13:04:56.720+05:30  INFO 34584 --- [inbound-service] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    alter table if exists asn_hdr 
+       alter column id set data type bigint
+Hibernate: 
+    alter table if exists asn_hdr 
+       alter column asn_number set data type varchar(255)
+Hibernate: 
+    alter table if exists asn_hdr 
+       add column expected_date date
+Hibernate: 
+    alter table if exists asn_hdr 
+       alter column status set data type varchar(255)
+Hibernate: 
+    alter table if exists asn_hdr 
+       add column supplier varchar(255)
+Hibernate: 
+    alter table if exists asn_hdr 
+       add column po_hdr_id bigint
+Hibernate: 
+    alter table if exists po_dtl 
+       alter column id set data type bigint
+Hibernate: 
+    alter table if exists po_dtl 
+       alter column item_code set data type varchar(255)
+Hibernate: 
+    alter table if exists po_dtl 
+       add column item_description varchar(255)
+Hibernate: 
+    alter table if exists po_dtl 
+       add column ordered_qty integer
+Hibernate: 
+    alter table if exists po_dtl 
+       add column received_qty integer
+Hibernate: 
+    alter table if exists po_dtl 
+       add column po_hdr_id bigint not null
+Hibernate: 
+    alter table if exists po_hdr 
+       alter column id set data type bigint
+Hibernate: 
+    alter table if exists po_hdr 
+       alter column po_number set data type varchar(255)
+Hibernate: 
+    alter table if exists po_hdr 
+       alter column status set data type varchar(255)
+Hibernate: 
+    alter table if exists po_hdr 
+       alter column supplier set data type varchar(255)
+Hibernate: 
+    alter table if exists receipt_hdr 
+       alter column id set data type bigint
+Hibernate: 
+    alter table if exists receipt_hdr 
+       add column receipt_date date
+Hibernate: 
+    alter table if exists receipt_hdr 
+       add column receipt_number varchar(255)
+Hibernate: 
+    alter table if exists receipt_hdr 
+       alter column status set data type varchar(255)
+Hibernate: 
+    alter table if exists receipt_hdr 
+       add column asn_hdr_id bigint
+Hibernate: 
+    alter table if exists receipt_hdr 
+       add column po_hdr_id bigint
+Hibernate: 
+    alter table if exists asn_hdr 
+       add constraint FKidaw0fmshm7bx6ogmhwpatyes 
+       foreign key (po_hdr_id) 
+       references po_hdr
+Hibernate: 
+    alter table if exists po_dtl 
+       add constraint FK9ls7gh5252ln2qmpaq5m3pxfk 
+       foreign key (po_hdr_id) 
+       references po_hdr
+Hibernate: 
+    alter table if exists receipt_hdr 
+       add constraint FKkyd0d1816mask5kjjcd0ikfn 
+       foreign key (asn_hdr_id) 
+       references asn_hdr
+Hibernate: 
+    alter table if exists receipt_hdr 
+       add constraint FKfkhvc8k7b37wvucwga7unbsr6 
+       foreign key (po_hdr_id) 
+       references po_hdr
+2026-09-12T13:04:57.359+05:30  INFO 34584 --- [inbound-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-12T13:04:57.677+05:30  INFO 34584 --- [inbound-service] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-12T13:04:58.983+05:30  WARN 34584 --- [inbound-service] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-12T13:05:01.141+05:30  INFO 34584 --- [inbound-service] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8083 (http) with context path '/'
+2026-09-12T13:05:01.173+05:30  INFO 34584 --- [inbound-service] [           main] c.i.inbound.InboundServiceApplication    : Started InboundServiceApplication in 18.127 seconds (process running for 19.129)
+2026-09-12T13:11:54.168+05:30  INFO 34584 --- [inbound-service] [nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-12T13:11:54.169+05:30  INFO 34584 --- [inbound-service] [nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-12T13:11:54.173+05:30  INFO 34584 --- [inbound-service] [nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-09-12T13:11:55.550+05:30  INFO 34584 --- [inbound-service] [io-8083-exec-10] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 734 ms
+2026-09-12T13:39:24.579+05:30  WARN 34584 --- [inbound-service] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m31s594ms381µs400ns).

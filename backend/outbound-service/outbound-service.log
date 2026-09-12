@@ -1,0 +1,137 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.iiiotwms:outbound-service >--------------------
+[INFO] Building outbound-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.1.1:run (default-cli) > test-compile @ outbound-service >>>
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ outbound-service ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ outbound-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ outbound-service ---
+[INFO] skip non existing resourceDirectory c:\Users\psd_d\Workspace\iiiotwms\backend\outbound-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ outbound-service ---
+[INFO] Recompiling the module because of added or removed source files.
+[INFO] Compiling 1 source file with javac [debug parameters release 21] to target\test-classes
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] 
+[INFO] <<< spring-boot:4.1.1:run (default-cli) < test-compile @ outbound-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.1.1:run (default-cli) @ outbound-service ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.1)
+
+2026-09-12T13:05:05.871+05:30  INFO 35028 --- [outbound-service] [           main] c.i.outbound.OutboundServiceApplication  : Starting OutboundServiceApplication using Java 26.0.2.1 with PID 35028 (C:\Users\psd_d\Workspace\iiiotwms\backend\outbound-service\target\classes started by psd_d in c:\Users\psd_d\Workspace\iiiotwms\backend\outbound-service)
+2026-09-12T13:05:05.875+05:30  INFO 35028 --- [outbound-service] [           main] c.i.outbound.OutboundServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-09-12T13:05:06.911+05:30  INFO 35028 --- [outbound-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-12T13:05:06.972+05:30  INFO 35028 --- [outbound-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces.
+2026-09-12T13:05:07.574+05:30  INFO 35028 --- [outbound-service] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8086 (http)
+2026-09-12T13:05:07.588+05:30  INFO 35028 --- [outbound-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-12T13:05:07.589+05:30  INFO 35028 --- [outbound-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-12T13:05:07.658+05:30  INFO 35028 --- [outbound-service] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1713 ms
+2026-09-12T13:05:08.144+05:30  INFO 35028 --- [outbound-service] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-12T13:05:08.312+05:30  INFO 35028 --- [outbound-service] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-12T13:05:09.608+05:30  INFO 35028 --- [outbound-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-12T13:05:09.715+05:30  INFO 35028 --- [outbound-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-12T13:05:10.312+05:30  INFO 35028 --- [outbound-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5b490d5e
+2026-09-12T13:05:10.316+05:30  INFO 35028 --- [outbound-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-12T13:05:10.545+05:30  INFO 35028 --- [outbound-service] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/iiiotwms]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.6
+	Default catalog/schema: iiiotwms/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-12T13:05:13.459+05:30  INFO 35028 --- [outbound-service] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    alter table if exists shipment_hdr 
+       alter column id set data type bigint
+Hibernate: 
+    alter table if exists shipment_hdr 
+       alter column carrier set data type varchar(255)
+Hibernate: 
+    alter table if exists shipment_hdr 
+       alter column ship_date set data type date
+Hibernate: 
+    alter table if exists shipment_hdr 
+       add column shipment_number varchar(255)
+Hibernate: 
+    alter table if exists shipment_hdr 
+       alter column status set data type varchar(255)
+Hibernate: 
+    alter table if exists shipment_hdr 
+       add column so_hdr_id bigint
+Hibernate: 
+    alter table if exists so_dtl 
+       alter column id set data type bigint
+Hibernate: 
+    alter table if exists so_dtl 
+       alter column item_code set data type varchar(255)
+Hibernate: 
+    alter table if exists so_dtl 
+       add column ordered_qty integer
+Hibernate: 
+    alter table if exists so_dtl 
+       add column shipped_qty integer
+Hibernate: 
+    alter table if exists so_dtl 
+       add column status varchar(255)
+Hibernate: 
+    alter table if exists so_dtl 
+       add column so_hdr_id bigint not null
+Hibernate: 
+    alter table if exists so_hdr 
+       alter column id set data type bigint
+Hibernate: 
+    alter table if exists so_hdr 
+       alter column customer set data type varchar(255)
+Hibernate: 
+    alter table if exists so_hdr 
+       alter column so_number set data type varchar(255)
+Hibernate: 
+    alter table if exists so_hdr 
+       alter column status set data type varchar(255)
+Hibernate: 
+    alter table if exists shipment_hdr 
+       add constraint FKrxoh9oepwf63gm840yvq0nuv4 
+       foreign key (so_hdr_id) 
+       references so_hdr
+Hibernate: 
+    alter table if exists so_dtl 
+       add constraint FKdv59o39rr4tor30ntaok1mimp 
+       foreign key (so_hdr_id) 
+       references so_hdr
+2026-09-12T13:05:13.884+05:30  INFO 35028 --- [outbound-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-12T13:05:14.129+05:30  INFO 35028 --- [outbound-service] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-12T13:05:14.697+05:30  WARN 35028 --- [outbound-service] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-12T13:05:15.740+05:30  INFO 35028 --- [outbound-service] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8086 (http) with context path '/'
+2026-09-12T13:05:15.754+05:30  INFO 35028 --- [outbound-service] [           main] c.i.outbound.OutboundServiceApplication  : Started OutboundServiceApplication in 10.457 seconds (process running for 11.031)
+2026-09-12T13:13:12.603+05:30  INFO 35028 --- [outbound-service] [nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-12T13:13:12.604+05:30  INFO 35028 --- [outbound-service] [nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-12T13:13:12.608+05:30  INFO 35028 --- [outbound-service] [nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-09-12T13:13:14.205+05:30  INFO 35028 --- [outbound-service] [io-8086-exec-10] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 788 ms
+2026-09-12T13:39:12.448+05:30  WARN 35028 --- [outbound-service] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m31s594ms110µs700ns).
