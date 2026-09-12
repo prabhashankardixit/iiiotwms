@@ -79,3 +79,5 @@ This generated password is for development use only. Your security configuration
 2026-09-12T13:10:07.451+05:30  INFO 24340 --- [identity-service] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2026-09-12T13:10:07.456+05:30  INFO 24340 --- [identity-service] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
 2026-09-12T13:10:08.938+05:30  INFO 24340 --- [identity-service] [io-8081-exec-10] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 589 ms
+2026-09-12T13:39:14.614+05:30  WARN 24340 --- [identity-service] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m7s766ms637µs200ns).
+^C

@@ -83,3 +83,5 @@ This generated password is for development use only. Your security configuration
 2026-09-12T13:39:22.964+05:30  WARN 30124 --- [user-service] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m31s583ms19µs100ns).
 Hibernate: select u1_0.id,u1_0.email,u1_0.enabled,u1_0.password from users u1_0 where u1_0.email=?
 Hibernate: select u1_0.id,u1_0.email,u1_0.enabled,u1_0.password from users u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.email,u1_0.enabled,u1_0.password from users u1_0 where u1_0.email=?
+^C

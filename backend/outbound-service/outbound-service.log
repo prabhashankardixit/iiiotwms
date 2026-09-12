@@ -135,3 +135,4 @@ Hibernate:
 2026-09-12T13:13:12.608+05:30  INFO 35028 --- [outbound-service] [nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
 2026-09-12T13:13:14.205+05:30  INFO 35028 --- [outbound-service] [io-8086-exec-10] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 788 ms
 2026-09-12T13:39:12.448+05:30  WARN 35028 --- [outbound-service] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m31s594ms110µs700ns).
+^C

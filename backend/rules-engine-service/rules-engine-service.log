@@ -78,3 +78,4 @@ WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 2026-09-12T13:12:18.290+05:30  INFO 16336 --- [rules-engine-service] [nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
 2026-09-12T13:12:19.523+05:30  INFO 16336 --- [rules-engine-service] [io-8084-exec-10] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 563 ms
 2026-09-12T13:39:15.491+05:30  WARN 16336 --- [rules-engine-service] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m19s98ms580µs100ns).
+^C

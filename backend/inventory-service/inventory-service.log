@@ -99,3 +99,4 @@ Hibernate:
 2026-09-12T13:12:42.838+05:30  INFO 21172 --- [inventory-service] [nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
 2026-09-12T13:12:44.393+05:30  INFO 21172 --- [inventory-service] [io-8085-exec-10] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 741 ms
 2026-09-12T13:39:12.745+05:30  WARN 21172 --- [inventory-service] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m8s616ms375µs400ns).
+^C
