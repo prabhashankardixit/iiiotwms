@@ -1,4 +1,4 @@
-package com.wms.identity;
+package com.iiiotwms.identity;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
